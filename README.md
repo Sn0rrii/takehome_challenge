@@ -1,13 +1,13 @@
 # Restaurant Opening Time Takehome Challenge
 
-This repo completes the challenge outlined in the challenge/ directory.
+This repo completes the challenge outlined in the [challenge/ directory](challenge/README.md).
 
 # Setup:
 
 The database migrations are setup to be used by dbmate, to install dbmate on linux:
 ```
-$ sudo curl -fsSL -o /usr/local/bin/dbmate https://github.com/amacneil/dbmate/releases/latest/download/dbmate-linux-amd64
-$ sudo chmod +x /usr/local/bin/dbmate
+sudo curl -fsSL -o /usr/local/bin/dbmate https://github.com/amacneil/dbmate/releases/latest/download/dbmate-linux-amd64
+sudo chmod +x /usr/local/bin/dbmate
 ```
 
 Or on Osx using homebrew:
