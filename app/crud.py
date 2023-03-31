@@ -1,11 +1,12 @@
 from datetime import datetime
+from typing import List
 
 from sqlalchemy.orm import Session
 
 from app import models
 
 
-def get_restaurants(db: Session, dt: datetime) -> list[models.Restaurant]:
+def get_restaurants(db: Session, dt: datetime) -> List[models.Restaurant]:
     minute_of_week = dt.weekday() * 1440 + dt.hour * 60 + dt.minute
 
     return db.query(models.Restaurant).join(models.OperatingTime).filter(

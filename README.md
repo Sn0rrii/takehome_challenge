@@ -41,13 +41,17 @@ Seed the database:
 python parse_csv.py   
 ```
 
-Run the service
+Run the service:
 ```
 uvicorn app.main:app --reload
 ```
 
+Make a request:
 ```
-Make a request
+curl -X GET 'http://localhost:8000/2023-04-01T09:30:43'
+```
+
+
 ```
 Run tests:
 ```
