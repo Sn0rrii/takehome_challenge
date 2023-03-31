@@ -1,10 +1,10 @@
 # Restaurant Opening Time Takehome Challenge
 
-This repo completes the challenge outlined in the [challenge/ directory](challenge/README.md).
+This repo completes the challenge outlined in the [challenge directory](challenge/README.md).
 
 # Setup:
 
-The database migrations are setup to be used by dbmate, to install dbmate on linux:
+The database sql files are setup to be used by dbmate, to install dbmate on linux:
 ```
 sudo curl -fsSL -o /usr/local/bin/dbmate https://github.com/amacneil/dbmate/releases/latest/download/dbmate-linux-amd64
 sudo chmod +x /usr/local/bin/dbmate
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 Spin up the database:
 ```
-docker-compose up postgres
+docker-compose up -d postgres
 ```
 
 Run migrations:
@@ -51,8 +51,6 @@ Make a request:
 curl -X GET 'http://localhost:8000/2023-04-01T09:30:43'
 ```
 
-
-```
 Run tests:
 ```
 pytest test/test.py
